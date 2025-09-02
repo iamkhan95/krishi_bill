@@ -1,0 +1,94 @@
+/* Container */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.page-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+.page-heading::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Form Elements */
+.product-form .form-group {
+    margin-bottom: 20px;
+}
+
+.product-form label {
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.product-form input,
+.product-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0,123,255,0.2);
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.save {
+    background: #28a745;
+    color: #fff;
+}
+
+.btn.save:hover {
+    background: #218838;
+}
+
+.btn.cancel {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn.cancel:hover {
+    background: #a71d2a;
+}
